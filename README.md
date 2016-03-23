@@ -1,3 +1,34 @@
+#databaseとのつなげ方
+app/Config/database.php
+
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'ここにデータベース名',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+（windwsのxampp使用の場合で設定なしはこのまま）
+（mampは　'localhost', 'root', 'root'）
+
+テーブル名はimagesで
+必要カラム４
+id (int AI)
+filename (varchar)
+place (varchar)
+contents (mediumblob)
+
+
+
+
+
+
+
+
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
